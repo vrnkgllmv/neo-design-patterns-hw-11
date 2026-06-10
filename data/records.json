@@ -1,0 +1,68 @@
+[
+  {
+    "type": "access_log",
+    "timestamp": "2025-05-01T12:00:00Z",
+    "userId": "user-123",
+    "ip": "192.168.0.1"
+  },
+  {
+    "type": "transaction",
+    "amount": "1400.50",
+    "currency": "usd",
+    "timestamp": "2025-05-01T12:10:00Z"
+  },
+  {
+    "type": "system_error",
+    "timestamp": "2025-05-01T12:15:00Z",
+    "level": "warning",
+    "message": "  Disk usage exceeded 90%   "
+  },
+  {
+    "type": "access_log",
+    "timestamp": "invalid-date-string",
+    "userId": "user-999",
+    "ip": "10.0.0.1"
+  },
+  {
+    "type": "access_log",
+    "timestamp": "2025-05-01T13:00:00Z",
+    "userId": "",
+    "ip": "192.168.1.1"
+  },
+  {
+    "type": "access_log",
+    "timestamp": "2025-05-01T13:05:00Z",
+    "userId": "user-456",
+    "ip": "300.168.1.1"
+  },
+  {
+    "type": "transaction",
+    "amount": "abc",
+    "currency": "eur",
+    "timestamp": "2025-05-01T13:10:00Z"
+  },
+  {
+    "type": "transaction",
+    "amount": "-50.0",
+    "currency": "usd",
+    "timestamp": "2025-05-01T13:15:00Z"
+  },
+  {
+    "type": "transaction",
+    "amount": "250.00",
+    "currency": "usdd",
+    "timestamp": "2025-05-01T13:20:00Z"
+  },
+  {
+    "type": "system_error",
+    "timestamp": "2025-05-01T13:25:00Z",
+    "level": "debug",
+    "message": "This is a debug message"
+  },
+  {
+    "type": "system_error",
+    "timestamp": "2025-05-01T13:30:00Z",
+    "level": "critical",
+    "message": "A very long error message that repeats itself to exceed the 255 characters limit. This is designed to test the message trimmer handler which should truncate this message to exactly 255 characters. Repeating: A very long error message that repeats itself to exceed the 255 characters limit."
+  }
+]

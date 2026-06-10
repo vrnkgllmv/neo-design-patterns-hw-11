@@ -1,0 +1,16 @@
+{
+  "name": "neo-design-patterns-hw-11",
+  "version": "1.0.0",
+  "description": "Chain of Responsibility and Mediator design patterns homework",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
